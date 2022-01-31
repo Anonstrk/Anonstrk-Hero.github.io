@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title My Site 
+    block scripts
+    block style
+      style 
+        include ../views/style.css
+        include ../views/responsive.css    
+  body
+    nav#navbar
+        #logo
+         img(src='./logo/logo.jpg' alt='logo')
+        #nav
+         ul#nav-list
+            li#nav-list-item 
+                a(href='/') Home
+            li#nav-list-item 
+                a(href='#card-section-name') Explore
+            li#nav-list-item 
+                a(href='/register') Register
+            li#nav-list-item
+                a(href='#section-thoughts') Thoughts 
+            li#nav-list-item
+                a(href='/') About
+    
+    

@@ -1,0 +1,167 @@
+//- extends base.pug
+
+block scripts
+  script(src='/views/index.js.js')
+block style 
+    style 
+        include ../views/style.css    
+        include ../views/responsive.css
+block content
+  nav#navbar
+        #logo
+         img(src='./logo/logo.jpg' alt='logo')
+        #nav
+         ul#nav-list
+            li#nav-list-item 
+                a(href='/') Home
+            li#nav-list-item 
+                a(href='#card-section-name') Explore
+            li#nav-list-item 
+                a(href='/register') Register
+            li#nav-list-item
+                a(href='#section-thoughts') Thoughts 
+            li#nav-list-item
+                a(href='/') About
+  section#section1
+      #section1-background-video
+        video#background-video(autoplay='' muted='' loop='')
+          source(src='./video/background.mp4' type='video/mp4')
+      #company-name
+        .text CELEBUTANTE
+        #company-name-slogan
+          h3 To Make Super Hero's Academy
+  div#card-section-name
+    h1 Explore
+  section#section-two
+    div.card
+      div.card-headline
+        h1 Ability
+      div.card-button
+        span  Follow 
+      div.card-icon
+        img(src='./logo/icons/superpowers-brands.svg' alt='')
+        img(src='./logo/icons/mandalorian-brands.svg' alt='')
+        img(src='./logo/icons/centos-brands.svg' alt='')
+        img(src='./logo/icons/battle-net-brands.svg' alt='')
+        img(src='./logo/icons/artstation-brands.svg' alt='')
+      div.card-para
+        p The mental or physical power or skill that makes it possible to do something power or capacity to do or act physically, mentally, legally, morally, financially, etc. competence in an activity or occupation because of one's skill, training, or other qualification:   
+    div.card
+      div.card-headline
+        h1 Immortal
+      div.card-button
+        span  Follow
+      div.card-icon
+        img(src='./logo/icons/superpowers-brands.svg' alt='')
+        img(src='./logo/icons/mandalorian-brands.svg' alt='')
+        img(src='./logo/icons/centos-brands.svg' alt='')
+        img(src='./logo/icons/battle-net-brands.svg' alt='')
+        img(src='./logo/icons/artstation-brands.svg' alt='')
+      div.card-para
+        p  Immoral describes a person or behavior that conscientiously goes against accepted morals—that is, the proper ideas and beliefs about how to behave in a way that is considered right and good by the majority of people.
+    div.card
+      div.card-headline
+        h1 Psychic
+      div.card-button
+        span  Follow
+      div.card-icon
+        img(src='./logo/icons/superpowers-brands.svg' alt='')
+        img(src='./logo/icons/mandalorian-brands.svg' alt='')
+        img(src='./logo/icons/centos-brands.svg' alt='')
+        img(src='./logo/icons/battle-net-brands.svg' alt='')
+        img(src='./logo/icons/artstation-brands.svg' alt='')
+      div.card-para
+        p  A psychic is a person who claims to use extrasensory perception (ESP) to identify information hidden from the normal senses, particularly involving telepathy or clairvoyance, or who performs acts that are apparently inexplicable by natural laws.   
+
+  #section-thoughts
+  section#section-three 
+  div#thoughts 
+    h1 Thoughts  
+  div#steps
+    div.step 
+       p  “To earn the respect (and eventually love) of your customers, you first have to respect those customers. That is why Golden Rule behavior is embraced by most of the winning companies.”
+    div.step.two
+      p “There is a spiritual aspect to our lives — when we give, we receive — when a business does something good for somebody, that somebody feels good about them!”
+  div#dispose
+    div#dispose-img
+      img(src="./img/section-3/dispose-icon/views.svg", alt="Views-img")
+      img(src="./img/section-3/dispose-icon/registered.svg", alt="Registered-img")
+      img(src="./img/section-3/dispose-icon/branch.svg", alt="Branch-img")
+      img(src="./img/section-3/dispose-icon/Institutes.svg", alt="Institutes-img")
+    div#dispose-name
+      span Views 
+      span Registered
+      span Branches
+      span Institutes
+
+    div#dispose-count
+      div.counter(data-target='36000') 0
+      div.counter(data-target='25000') 0
+      div.counter(data-target='10000') 0
+      div.counter(data-target='9000') 0
+
+  footer#footer 
+    div#footer-search
+      form(action='/action_page.php')
+      input(type='text' placeholder='Search..' name='search')
+      button(type='submit')
+       img(src="./img/footer/search.svg", alt="")
+
+    div#footer-layout-structure
+      div.footer-layout.box1
+        h3 Celebutant
+        li
+          a(href="http://") Terms  
+        li
+          a(href="http://") Licenses  
+        li
+          a(href="http://") Market API  
+        li
+          a(href="http://") Become an affiliate  
+          
+      div.footer-layout.box2
+        h3 Support
+        li
+          a(href="http://") 24/7 Support   
+        li
+          a(href="http://") Authors  
+        li
+          a(href="http://") Forums  
+        li
+          a(href="http://") Help Center  
+        li
+          a(href="http://") Health  
+        li
+          a(href="http://") Free tools  
+      div.footer-layout.box3       
+        h3 Our Community
+        li
+          a(href="http://") Community  
+        li
+          a(href="http://") Blog  
+        li
+          a(href="http://") Forums  
+        li
+          a(href="http://") Meetups  
+
+      div.footer-layout.box4  
+        h3 About Celebutant
+        li
+          a(href="http://") Celebutants  
+        li
+          a(href="http://") Sitemap  
+        li
+          a(href="http://") Careers  
+        li
+          a(href="http://") Privacy Policy  
+       
+    div#footer-copyright
+      p &copy; 2021 Celebutant Ptv Ltd. Trademarks and brands are the property of their respective owners.
+       
+
+
+  script(src='script.js')
+    
+
+
+

@@ -1,0 +1,45 @@
+//- extends base.pug
+
+block scripts
+  script(src='/views/index.js')
+block style 
+    style 
+        include ../views/style.css 
+        
+
+block content
+  doctype html
+  html(lang="en")
+    head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title Document
+    body 
+      nav#navbar
+        #logo
+         img(src='./logo/logo.jpg' alt='logo')
+        #nav
+         ul#nav-list
+            li#nav-list-item 
+                a(href='/') Home
+            li#nav-list-item 
+                a(href='#card-section-name') Explore
+            li#nav-list-item 
+                a(href='/register') Register
+            li#nav-list-item
+                a(href='#section-thoughts') Thoughts 
+            li#nav-list-item
+                a(href='/') About
+      div#form-container
+        div#form-headline
+          h1 Registeration
+        form(action="/register" ,method="post" ,class="register-form")
+          input(type="text" ,name="name" ,placeholder="Type Your Name")
+          input(type="text" ,name="sname" ,placeholder="Type Your Super Hero Name")
+          input(type="email" ,name="email" ,placeholder="Type Your Email")
+          input(type="phone", name="phone" ,placeholder="Type Your Phone No.")
+          input(type="text" ,name="address" ,placeholder="Type Your Address")
+          button#submit-btn(type="submit") Submit                  
+
+  

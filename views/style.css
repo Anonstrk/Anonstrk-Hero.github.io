@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Yatra+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* -----------jugard links :) :) :)--------------- */
+
+#navbar {
+  /* padding-top: 13px; */
+  justify-content: center;
+  display: flex;
+  background-color: rgb(247 240 233);
+  color: #ef4d63;
+
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+#logo img {
+  height: auto;
+  width: 100px;
+}
+
+#nav-list {
+  display: flex;
+  margin: 10px;
+}
+
+#nav-list-item {
+  font-size: 25px;
+  padding: 15px;
+  list-style: none;
+  margin-right: 25px;
+}
+
+#nav-list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+#section1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#section1-background-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#background-video {
+  width: 100%;
+  opacity: 0.6;
+}
+
+#company-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin-top: 10rem;
+}
+
+.text {
+  font-size: 90px;
+  font-family: "Yatra One", cursive;
+}
+
+#company-name-slogan {
+  display: flex;
+  justify-content: center;
+  font-family: "Cinzel", serif;
+}
+
+/*------------------------------------------------------------------------- section2 stuff ------------------------------------------------*/
+#section-two {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: #020000;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-section-name {
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  background-color: #000000;
+  color: white;
+  padding-top: 70px;
+}
+
+#section-two .card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 75%;
+  margin: 10px;
+  background: linear-gradient(to right, #00ffe785, #0042f92f, #f9000026);
+}
+
+.card-headline {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 23px;
+  color: white;
+}
+
+.card-button {
+  text-align: center;
+  margin: 40px;
+}
+
+.card-button span {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 5px;
+  width: 95%;
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+  transform: perspective(600);
+  color: rgb(255, 255, 255);
+}
+
+.card-button span:hover {
+  box-shadow: 1px 1px 6px 3px rgb(255, 255, 255);
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.card-icon img {
+  height: 40;
+  width: 40;
+  margin: auto;
+  box-sizing: border-box;
+  transition: all ease-in-out 1.2s;
+  transform: perspective(600);
+  filter: invert(1);
+}
+
+.card-icon img:hover {
+  box-shadow: 1px 1px 9px 3px rgb(0 255 20);
+}
+
+.card-para {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  color: rgb(255, 250, 250);
+  box-sizing: border-box;
+}
+
+.card-para p {
+  text-align: center;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------- section3 ------------------------------------------------- */
+#section-three {
+  background-color: rgb(255, 0, 0);
+}
+
+#section-three::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50rem;
+  background: url("./img/section-3/5.jpg") center center/cover no-repeat;
+  z-index: -1;
+  opacity: 0.7;
+  filter: saturate(3) brightness(1);
+  display: flex;
+  flex-direction: column;
+}
+
+#thoughts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 15rem;
+  height: 5rem;
+  z-index: 1;
+  color: #000000;
+  font-size: 23px;
+  padding-top: 60px;
+  /* border: 2px solid red; */
+}
+
+#steps {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+}
+
+#steps div {
+  width: 30%;
+  height: 85%;
+  border: 2px solid black;
+  margin: 0px auto;
+}
+
+.step p {
+  font-size: 25px;
+}
+
+#dispose {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  height: 19.2rem;
+  border: 2px solid black;
+}
+
+#dispose-img,
+#dispose-name,
+#dispose-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#dispose-img img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-top: 5rem;
+}
+#dispose-name span {
+  align-items: center;
+  margin: auto;
+  margin-top: 2px;
+  font-size: 30px;
+}
+
+#dispose-count div {
+  margin: auto;
+  width: 14rem;
+  height: 7rem;
+  /* border: 2px solid red; */
+  padding-top: 5px;
+}
+.counter {
+  align-items: center;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* ============================================================ footer ================================================ */
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: white;
+}
+
+#footer-search {
+  /* margin: 2px; */
+  margin-left: 65rem;
+}
+
+#footer-search input {
+  height: 40px;
+  width: 14rem;
+  outline: none;
+}
+
+#footer-search button {
+  margin-top: 30px;
+  background-color: black;
+  border: none;
+  width: 25px;
+  position: relative;
+  top: 11px;
+  margin: auto;
+}
+
+#footer-search img {
+  margin: 72px 0px 0px 0px;
+  width: 24px;
+  height: 30px;
+  filter: invert(1);
+}
+
+#footer div.footer-layout {
+  width: 25%;
+  /* text-align: center; */
+  height: auto;
+  /* border:2px solid greenyellow ; */
+  padding: 50px;
+  margin-top: 20px;
+}
+#footer-layout-structure {
+  display: flex;
+}
+.footer-layout li {
+  list-style: none;
+  padding: 2px;
+  margin: 2px;
+  line-height: 1.5;
+}
+
+.footer-layout h3 {
+  text-align: center;
+  color: rgb(163, 163, 163);
+  font-size: 23px;
+  margin: 11px;
+  margin-bottom: 3rem;
+}
+
+.footer-layout li a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer-copyright {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px;
+}
+
+/* --------------------------------------------Register Stuff------------------------------------------------------- */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: auto;
+  width: 18rem;
+  /* background-color: #ef4d63; */
+}
+
+.register-form input {
+  justify-content: center;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 0px;
+  padding: 5px;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+#submit-btn {
+  margin: auto;
+  width: 10rem;
+  height: 40px;
+  padding: 2px;
+  margin-top: 23px;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  width: 30%;
+  margin: 75px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px;
+}
+
+#form-headline {
+  width: 50%;
+  font-size: 18px;
+  margin: auto;
+}
+#form-headline h1 {
+  text-align: center;
+}
